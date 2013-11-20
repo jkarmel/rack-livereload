@@ -504,7 +504,7 @@ Options.extract = function(document) {
         }
       }
       if (__liveJS) {
-        return __liveJS(path, originalPath);
+        return __liveJS(path, options);
       }
       return this.reloadPage();
     };
