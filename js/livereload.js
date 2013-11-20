@@ -503,8 +503,8 @@ Options.extract = function(document) {
           return;
         }
       }
-      if (options.liveJS) {
-        return options.liveJS(path, originalPath);
+      if (__liveJS) {
+        return __liveJS(path, originalPath);
       }
       return this.reloadPage();
     };
