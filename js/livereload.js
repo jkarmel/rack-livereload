@@ -503,6 +503,9 @@ Options.extract = function(document) {
           return;
         }
       }
+      if (options.liveJS) {
+        return options.liveJS(path, originalPath);
+      }
       return this.reloadPage();
     };
 
